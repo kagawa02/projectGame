@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word & Picture Matching Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word & Picture Matching Game</h1>
+        
+        <div class="level-selector">
+            <h2>Select Level</h2>
+            <div class="level-buttons">
+                <button class="level-btn" data-level="1">Level 1</button>
+                <button class="level-btn" data-level="2">Level 2</button>
+                <button class="level-btn" data-level="3">Level 3</button>
+                <button class="level-btn" data-level="4">Level 4</button>
+                <button class="level-btn" data-level="5">Level 5</button>
+            </div>
+        </div>
+
+        <div class="game-stats">
+            <div class="moves">Moves: <span id="moves">0</span></div>
+            <div class="timer">Time: <span id="time">0:00</span></div>
+        </div>
+
+        <div class="game-container">
+            <div id="game-board"></div>
+        </div>
+
+        <div class="win-message" id="winMessage">
+            <h2>Congratulations!</h2>
+            <p>You completed the level in <span id="finalMoves">0</span> moves and <span id="finalTime">0:00</span>!</p>
+            <div class="win-buttons">
+                <button id="playAgain">Play Again</button>
+                <button id="nextLevel" class="next-level-btn">Next Level</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
